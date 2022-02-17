@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Château Mani</title>
+
+    <!--파비콘-->
+    <link rel="icon" href="./img/favicon.png" />
+
+    <!--스타일-->
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!--웹폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<header>
+    <img src="./img/favicon.png" height="100%"></img>
+    <nav>
+        <span>회사소개</span>
+        <span>와이너리</span>
+        <span>제품구매</span>
+    </nav>
+</header>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Château Mani</h1>
+			<p>[샤토 마니]는 충북 영동의 포도를 정통양조법으로 양조한 우리 포도주입니다.</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="intro">
+			<h1>Château Mani Nuovo</h1>
+			<p>포도송이를 통째로 마시는 듯한 향기와 가벼운 바디감.</p>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Château Mani Ice</h1>
+			<p>첫맛은 매우 달콤함, 깔끔한 산미와 개운한 끝맛이 특징.</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="./js/fullpage.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#A07178', '#7B6577', '#5A5353'],
+        responsiveHeight: 400,
+        afterResponsive: function(isResponsive){
+
+        }
+    });
+</script>
+</body>
+</html>
